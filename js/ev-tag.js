@@ -30,7 +30,7 @@ function load() {
         return {
             view: tag,
             opacity: Math.random(),
-            color:colors[i],
+            color:colors[Math.round(Math.random()*(colors.length-1))],
             ng: i/len*2*Math.PI,
             ng1:Math.random()*2*Math.PI,
             x: d/3 * Math.cos(i/len*2*Math.PI),
